@@ -1,0 +1,14 @@
+@import url("./loader.css");
+@import url("./header.css");
+@import url("./navigation.css");
+@import url("./masthead.css");
+@import url("./sobre.css");
+@import url("./portfolio.css");
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+    background: #303030;
+    color: #f0f0f0
+}

@@ -1,0 +1,82 @@
+.line {
+    width: 24em;
+    top: 50%;
+    margin: auto;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCussor 500ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 18.5em;
+    }
+}
+
+@media(max-width: 768px) {
+    @keyframes typewriter {
+        from {
+            width: 0;
+        }
+        to {
+            width: 18.2em;
+        }
+    }
+}
+
+@keyframes blinkTextCussor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 58px;
+}
+
+@media(max-width: 768px) {
+    .masthead h1 {
+        letter-spacing: -1px;
+        font-size: 18px;
+    }
+}
+
+.scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    z-index: 0;
+    text-decoration: none;
+    text-shadow: 0;
+    width: 13px;
+    height: 13px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transform: translate(-50%, 0) rotate(45deg);
+    animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
