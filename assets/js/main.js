@@ -3,7 +3,7 @@
 
     // Preloader js    
     $(window).on('load', function () {
-        $('.loader').fadeOut(100);
+        $('.loader').fadeOut(600);
     });
 
     //  isotope
